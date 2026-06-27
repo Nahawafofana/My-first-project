@@ -7,7 +7,9 @@
     font-family: 'Inter', Arial, sans-serif;
     color: #243e63;
 }
-
+img {
+    width: 100%;
+}   
 body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -17,6 +19,10 @@ body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+}
+li{
+    list-style-type: none;
+    padding-left:16px;
 }
 
 .row__narrow {
@@ -60,14 +66,41 @@ nav {
     justify-content: space-between;
 }
 
-.nav__logo {
+.nav__logo img {
     display: flex;
     align-items: center;
     margin: 8px 0;
     padding-bottom: 4px;
 }
 
-
+.nav__logo img {
+    width: 50px;
+}
+.nav-logo h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+.nav__link{ 
+    display: flex;
+}
+.nav__links li {
+    margin: 0 24px;
+}
+.login {
+    margin-left: 48px;
+}
+.nav__link--primary {
+    padding:10px 32px;
+    background: rgb(100, 21, 255);
+    color: white;
+    border-radius: 9999px;
+    margin-left: 0;
+}
+.nav__links { 
+display: flex;
+    
+}
 .btn__menu {
     display: none;
     background: transparent;
@@ -148,17 +181,33 @@ header .row {
     align-items: center;
     justify-content: space-between;
 }
+.email-box {
+    display: flex;
+    margin-top: 24px;
+}
+.email-box__input {
+    padding: 12px;
+    width 250px;
+}
+.email-box button {
+    padding: 12px 24px; 
+}
 
-
+   
 /* 
 
 FEATURES ↓
 
+
 */
-
-
 #features {
-    position: relative;
+ position: relative;
+ background-color: #f4f4f4;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+width: 30px;
+
 }
 
 #features .row__narrow {
@@ -184,15 +233,24 @@ QUALITY WORK ↓
 
 /* 
 
-STEPS ↓
+STEPS 
 
 */
-
+#steps {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
 
 #steps .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -201,11 +259,20 @@ STEPS ↓
 VALUES ↓
 
 */
+#values {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
 
 #values .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;  
 }
 
 
@@ -214,6 +281,15 @@ VALUES ↓
 PRICING ↓
 
 */
+/* pricing section */
+#pricing {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
 
 
 #pricing .row {
@@ -225,12 +301,23 @@ PRICING ↓
 /* 
 
 TESTIMONIALS ↓
-
-*/
+/* testimonials section */
+#testimonials {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    align-items: center;
+}
 
 
 #testimonials .row {
     display: flex;
+    justify-content:center;
+    gap: 20px;
+     flex-wrap: wrap;   
 }
 
 
@@ -238,7 +325,17 @@ TESTIMONIALS ↓
 
 START / CALL TO ACTION ↓
 
-*/
+/* start section */
+#start {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+     align-items: center;
+
+}
 
 
 
@@ -248,13 +345,8 @@ START / CALL TO ACTION ↓
 }
 
 
-/* 
 
-FOOTER ↓
-
-*/
-
-
+/* footer */
 footer {
     padding: 96px 32px;
     background-color: rgb(100, 21, 255);
